@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "Teritorio City",
+  "name": "Teritorio City Basic",
   "metadata": {
     "mapbox:autocomposite": false,
     "mapbox:groups": {
@@ -2815,7 +2815,17 @@
           "let",
           "_bloc_name",
           "styleFilter",
-          ["let", "style", ["get", "style"], ["==", ["var", "style"], "•"]]
+          [
+            "let",
+            "style",
+            [
+              "case",
+              ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+              "•",
+              ["get", "style"]
+            ],
+            ["==", ["var", "style"], "•"]
+          ]
         ]
       ],
       "layout": {
@@ -2829,7 +2839,12 @@
             ["concat", "-", ["get", "subclass"]],
             ""
           ],
-          ["get", "style"]
+          [
+            "case",
+            ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+            "•",
+            ["get", "style"]
+          ]
         ],
         "text-anchor": "top",
         "text-field": "{name:latin}\n{name:nonlatin}",
@@ -2864,7 +2879,17 @@
           "let",
           "_bloc_name",
           "styleFilter",
-          ["let", "style", ["get", "style"], ["==", ["var", "style"], "•"]]
+          [
+            "let",
+            "style",
+            [
+              "case",
+              ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+              "•",
+              ["get", "style"]
+            ],
+            ["==", ["var", "style"], "•"]
+          ]
         ]
       ],
       "layout": {
@@ -2878,7 +2903,12 @@
             ["concat", "-", ["get", "subclass"]],
             ""
           ],
-          ["get", "style"]
+          [
+            "case",
+            ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+            "•",
+            ["get", "style"]
+          ]
         ],
         "text-anchor": "top",
         "text-field": "{name:latin}\n{name:nonlatin}",
@@ -2911,7 +2941,17 @@
           "let",
           "_bloc_name",
           "styleFilter",
-          ["let", "style", ["get", "style"], ["==", ["var", "style"], "•"]]
+          [
+            "let",
+            "style",
+            [
+              "case",
+              ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+              "•",
+              ["get", "style"]
+            ],
+            ["==", ["var", "style"], "•"]
+          ]
         ]
       ],
       "layout": {
@@ -2925,7 +2965,12 @@
             ["concat", "-", ["get", "subclass"]],
             ""
           ],
-          ["get", "style"]
+          [
+            "case",
+            ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+            "•",
+            ["get", "style"]
+          ]
         ],
         "text-anchor": "top",
         "text-field": "{name:latin}\n{name:nonlatin}",
@@ -3350,7 +3395,17 @@
           "let",
           "_bloc_name",
           "styleFilter",
-          ["let", "style", ["get", "style"], ["!=", ["var", "style"], "•"]]
+          [
+            "let",
+            "style",
+            [
+              "case",
+              ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+              "•",
+              ["get", "style"]
+            ],
+            ["!=", ["var", "style"], "•"]
+          ]
         ]
       ],
       "layout": {
@@ -3364,7 +3419,12 @@
             ["concat", "-", ["get", "subclass"]],
             ""
           ],
-          ["get", "style"]
+          [
+            "case",
+            ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+            "•",
+            ["get", "style"]
+          ]
         ],
         "text-anchor": "top",
         "text-field": "{name:latin}\n{name:nonlatin}",
@@ -3454,7 +3514,17 @@
           "let",
           "_bloc_name",
           "styleFilter",
-          ["let", "style", ["get", "style"], ["!=", ["var", "style"], "•"]]
+          [
+            "let",
+            "style",
+            [
+              "case",
+              ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+              "•",
+              ["get", "style"]
+            ],
+            ["!=", ["var", "style"], "•"]
+          ]
         ]
       ],
       "layout": {
@@ -3468,7 +3538,12 @@
             ["concat", "-", ["get", "subclass"]],
             ""
           ],
-          ["get", "style"]
+          [
+            "case",
+            ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+            "•",
+            ["get", "style"]
+          ]
         ],
         "text-anchor": "top",
         "text-field": "{name:latin}\n{name:nonlatin}",
@@ -3556,7 +3631,17 @@
           "let",
           "_bloc_name",
           "styleFilter",
-          ["let", "style", ["get", "style"], ["!=", ["var", "style"], "•"]]
+          [
+            "let",
+            "style",
+            [
+              "case",
+              ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+              "•",
+              ["get", "style"]
+            ],
+            ["!=", ["var", "style"], "•"]
+          ]
         ]
       ],
       "layout": {
@@ -3570,7 +3655,12 @@
             ["concat", "-", ["get", "subclass"]],
             ""
           ],
-          ["get", "style"]
+          [
+            "case",
+            ["let", "_bloc_name", "poiFilter", ["!", ["any"]]],
+            "•",
+            ["get", "style"]
+          ]
         ],
         "text-anchor": "top",
         "text-field": "{name:latin}\n{name:nonlatin}",
@@ -3996,5 +4086,5 @@
       }
     }
   ],
-  "id": "teritorio-city"
+  "id": "teritorio-city-basic"
 }
